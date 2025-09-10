@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hospital Luzuriaga",
+    "especialidades": ["Traumatología", "Radiología", "Pediatría", "Cardiología", "Dermatología"],
+    "ubicacion": { "ciudad": "La Plata", "localidad": "Centro", "direccion": "Calle 50 N° 1234" }
+  },
+  {
+    "id": 2,
+    "nombre": "Clínica Santa María",
+    "especialidades": ["Oncología", "Ginecología", "Odontología", "Neurología"],
+    "ubicacion": { "ciudad": "Mar del Plata", "localidad": "Centro", "direccion": "Av. Luro 4567" }
+  },
+  {
+    "id": 3,
+    "nombre": "Policonsultorio Norte",
+    "especialidades": ["Traumatología", "Cardiología", "Psiquiatría", "Radiología"],
+    "ubicacion": { "ciudad": "Tigre", "localidad": "Don Torcuato", "direccion": "Calle Mitre 234" }
+  },
+  {
+    "id": 4,
+    "nombre": "Hospital Regional",
+    "especialidades": ["Pediatría", "Ginecología", "Cardiología", "Dermatología"],
+    "ubicacion": { "ciudad": "Quilmes", "localidad": "Centro", "direccion": "Av. Don Bosco 987" }
+  },
+  {
+    "id": 5,
+    "nombre": "Clínica del Sol",
+    "especialidades": ["Odontología", "Neurología", "Psiquiatría", "Oncología"],
+    "ubicacion": { "ciudad": "Morón", "localidad": "Castelar", "direccion": "Calle Libertad 321" }
+  },
+  {
+    "id": 6,
+    "nombre": "Clínica de los Miércoles",
+    "especialidades": ["Traumatología", "Cardiología", "Dermatología", "Pediatría"],
+    "ubicacion": { "ciudad": "Berazategui", "localidad": "Centro", "direccion": "Av. 14 N° 765" }
+  },
+  {
+    "id": 7,
+    "nombre": "Hospital General Oeste",
+    "especialidades": ["Ginecología", "Oncología", "Neurología", "Radiología"],
+    "ubicacion": { "ciudad": "Moreno", "localidad": "Oeste", "direccion": "Calle Sarmiento 210" }
+  },
+  {
+    "id": 8,
+    "nombre": "Clínica San Juan",
+    "especialidades": ["Pediatría", "Cardiología", "Psiquiatría", "Odontología"],
+    "ubicacion": { "ciudad": "San Isidro", "localidad": "Centro", "direccion": "Av. Centenario 432" }
+  },
+  {
+    "id": 9,
+    "nombre": "Hospital del Parque",
+    "especialidades": ["Traumatología", "Ginecología", "Dermatología", "Radiología"],
+    "ubicacion": { "ciudad": "Lomas de Zamora", "localidad": "Parque", "direccion": "Calle Brown 876" }
+  },
+  {
+    "id": 10,
+    "nombre": "Policlínico Central",
+    "especialidades": ["Oncología", "Cardiología", "Neurología", "Pediatría"],
+    "ubicacion": { "ciudad": "La Plata", "localidad": "Altos", "direccion": "Av. 7 N° 123" }
+  }
+]

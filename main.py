@@ -102,6 +102,18 @@ async def obtener_hospital(nombre: str):
     resultados = [h for h in hospitales if nombre in h["nombre"].lower()]
     return JSONResponse(content=resultados)
 
+# Ruta para eliminar un hospital por nombre
+@app.delete("/hospitales/{nombre}")
+async def eliminar_hospital(nombre: str):
+    global hospitales
+    # Buscar el hospital por nombre
+    for i, h in enumerate(hospitales):
+        if h["nombre"].lower() == nombre.lower():  # ignorar mayúsculas/minúsculas
+            hospitales.pop(i)
+            return {"message": f"Hospital '{nombre}' eliminado correctamente"}
+    
+    # Si no se encuentra
+    raise HTTPException(status_code=404, detail=f"Hospital '{nombre}' no encontrado")
 
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@
     "nombre": "Hospital Luzuriaga",
     "tipo": "Hospital Público",
     "especialidades": ["Traumatología", "Radiología", "Pediatría", "Cardiología", "Dermatología"],
-    "ubicacion": { "ciudad": "La Plata", "localidad": "Centro", "direccion": "Calle 50 N° 1234" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "San Justo", "direccion": "Calle 50 N° 1234" },
     "telefonos": ["(0221) 444-5678", "(0221) 444-1234"],
     "dias_y_horarios": "Lunes a Viernes, 08:00 - 18:00"
   },
@@ -13,7 +13,7 @@
     "nombre": "Clínica Santa María",
     "tipo": "Clínica Privada",
     "especialidades": ["Oncología", "Ginecología", "Odontología", "Neurología"],
-    "ubicacion": { "ciudad": "Mar del Plata", "localidad": "Centro", "direccion": "Av. Luro 4567" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "Tapiales", "direccion": "Av. Luro 4567" },
     "telefonos": ["(0223) 478-1122"],
     "dias_y_horarios": "Lunes a Sábado, 09:00 - 20:00"
   },
@@ -22,7 +22,7 @@
     "nombre": "Sanatorio Belgrano",
     "tipo": "Sanatorio Privado",
     "especialidades": ["Clínica Médica", "Cirugía General", "Oftalmología", "Dermatología"],
-    "ubicacion": { "ciudad": "Bahía Blanca", "localidad": "Norte", "direccion": "Calle Belgrano 890" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Libertad", "direccion": "Calle Belgrano 890" },
     "telefonos": ["(0291) 455-3322", "(0291) 455-7766"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -31,7 +31,7 @@
     "nombre": "Hospital Italiano",
     "tipo": "Hospital Privado",
     "especialidades": ["Cardiología", "Cirugía", "Medicina Interna", "Urología"],
-    "ubicacion": { "ciudad": "Buenos Aires", "localidad": "Almagro", "direccion": "Gascon 450" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Pontevedra", "direccion": "Gascon 450" },
     "telefonos": ["(011) 4959-0200"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -40,7 +40,7 @@
     "nombre": "Hospital Interzonal General de Agudos",
     "tipo": "Hospital Público",
     "especialidades": ["Clínica Médica", "Traumatología", "Neurología", "Psiquiatría"],
-    "ubicacion": { "ciudad": "Mar del Plata", "localidad": "La Perla", "direccion": "Av. Juan B. Justo 4100" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "San Justo", "direccion": "Av. Juan B. Justo 4100" },
     "telefonos": ["(0223) 482-1234"],
     "dias_y_horarios": "Lunes a Domingo, 24 horas"
   },
@@ -49,7 +49,7 @@
     "nombre": "Clínica Pueyrredón",
     "tipo": "Clínica Privada",
     "especialidades": ["Ginecología", "Pediatría", "Odontología", "Cardiología"],
-    "ubicacion": { "ciudad": "Mar del Plata", "localidad": "Centro", "direccion": "Boulevard Marítimo 3500" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "Tapiales", "direccion": "Boulevard Marítimo 3500" },
     "telefonos": ["(0223) 493-5566"],
     "dias_y_horarios": "Lunes a Sábado, 08:00 - 20:00"
   },
@@ -58,7 +58,7 @@
     "nombre": "Sanatorio Güemes",
     "tipo": "Sanatorio Privado",
     "especialidades": ["Cirugía", "Oncología", "Dermatología", "Oftalmología"],
-    "ubicacion": { "ciudad": "Buenos Aires", "localidad": "Almagro", "direccion": "Francisco Acuña de Figueroa 1240" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Libertad", "direccion": "Francisco Acuña de Figueroa 1240" },
     "telefonos": ["(011) 4959-8200"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -67,7 +67,7 @@
     "nombre": "Hospital San Martín",
     "tipo": "Hospital Público",
     "especialidades": ["Traumatología", "Pediatría", "Clínica Médica", "Cardiología"],
-    "ubicacion": { "ciudad": "La Plata", "localidad": "Tolosa", "direccion": "Av. 1 N° 1750" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Pontevedra", "direccion": "Av. 1 N° 1750" },
     "telefonos": ["(0221) 457-1234"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -76,7 +76,7 @@
     "nombre": "Hospital Evita",
     "tipo": "Hospital Público",
     "especialidades": ["Medicina General", "Pediatría", "Obstetricia"],
-    "ubicacion": { "ciudad": "Lanús", "localidad": "Centro", "direccion": "Av. Hipólito Yrigoyen 4500" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "San Justo", "direccion": "Av. Hipólito Yrigoyen 4500" },
     "telefonos": ["(011) 4241-4567"],
     "dias_y_horarios": "Lunes a Domingo, 24 horas"
   },
@@ -85,7 +85,7 @@
     "nombre": "Hospital Rossi",
     "tipo": "Hospital Público",
     "especialidades": ["Radiología", "Cardiología", "Clínica Médica"],
-    "ubicacion": { "ciudad": "La Plata", "localidad": "Centro", "direccion": "Calle 37 N° 1175" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "Tapiales", "direccion": "Calle 37 N° 1175" },
     "telefonos": ["(0221) 421-1234"],
     "dias_y_horarios": "Lunes a Viernes, 08:00 - 18:00"
   },
@@ -94,7 +94,7 @@
     "nombre": "Clínica del Sol",
     "tipo": "Clínica Privada",
     "especialidades": ["Dermatología", "Oftalmología", "Cardiología"],
-    "ubicacion": { "ciudad": "Buenos Aires", "localidad": "Palermo", "direccion": "Av. Coronel Díaz 2211" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Libertad", "direccion": "Av. Coronel Díaz 2211" },
     "telefonos": ["(011) 4821-4444"],
     "dias_y_horarios": "Lunes a Sábado, 09:00 - 19:00"
   },
@@ -103,7 +103,7 @@
     "nombre": "Hospital El Cruce",
     "tipo": "Hospital Público",
     "especialidades": ["Emergencias", "Cirugía", "Traumatología", "Cardiología"],
-    "ubicacion": { "ciudad": "Florencio Varela", "localidad": "Centro", "direccion": "Av. Calchaquí 5401" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Pontevedra", "direccion": "Av. Calchaquí 5401" },
     "telefonos": ["(011) 4365-1234"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -112,7 +112,7 @@
     "nombre": "Hospital de Niños Sor María Ludovica",
     "tipo": "Hospital Público",
     "especialidades": ["Pediatría", "Neonatología", "Cirugía Infantil"],
-    "ubicacion": { "ciudad": "La Plata", "localidad": "Centro", "direccion": "Calle 14 N° 1631" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "San Justo", "direccion": "Calle 14 N° 1631" },
     "telefonos": ["(0221) 451-7777"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -121,7 +121,7 @@
     "nombre": "Sanatorio Modelo Quilmes",
     "tipo": "Sanatorio Privado",
     "especialidades": ["Clínica Médica", "Oncología", "Cirugía"],
-    "ubicacion": { "ciudad": "Quilmes", "localidad": "Centro", "direccion": "Av. Hipólito Yrigoyen 4900" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "Tapiales", "direccion": "Av. Hipólito Yrigoyen 4900" },
     "telefonos": ["(011) 4257-1122"],
     "dias_y_horarios": "Lunes a Domingo, 08:00 - 22:00"
   },
@@ -130,7 +130,7 @@
     "nombre": "Clínica Olivos",
     "tipo": "Clínica Privada",
     "especialidades": ["Cardiología", "Ginecología", "Neurología"],
-    "ubicacion": { "ciudad": "Olivos", "localidad": "Norte", "direccion": "Av. Maipú 1660" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Libertad", "direccion": "Av. Maipú 1660" },
     "telefonos": ["(011) 4794-1234"],
     "dias_y_horarios": "Lunes a Sábado, 09:00 - 21:00"
   },
@@ -139,7 +139,7 @@
     "nombre": "Hospital Posadas",
     "tipo": "Hospital Público",
     "especialidades": ["Clínica Médica", "Emergencias", "Cardiología", "Traumatología"],
-    "ubicacion": { "ciudad": "El Palomar", "localidad": "Morón", "direccion": "Av. Presidente Illia S/N" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Pontevedra", "direccion": "Av. Presidente Illia S/N" },
     "telefonos": ["(011) 4658-2222"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -148,7 +148,7 @@
     "nombre": "Hospital Fernández",
     "tipo": "Hospital Público",
     "especialidades": ["Traumatología", "Cirugía", "Oncología"],
-    "ubicacion": { "ciudad": "Buenos Aires", "localidad": "Palermo", "direccion": "Av. Cerviño 3356" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "San Justo", "direccion": "Av. Cerviño 3356" },
     "telefonos": ["(011) 4808-2600"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -157,7 +157,7 @@
     "nombre": "Clínica Adventista Belgrano",
     "tipo": "Clínica Privada",
     "especialidades": ["Ginecología", "Pediatría", "Medicina Interna"],
-    "ubicacion": { "ciudad": "Buenos Aires", "localidad": "Belgrano", "direccion": "Av. Cabildo 1800" },
+    "ubicacion": { "ciudad": "La Matanza", "localidad": "Tapiales", "direccion": "Av. Cabildo 1800" },
     "telefonos": ["(011) 4781-1234"],
     "dias_y_horarios": "Lunes a Viernes, 08:00 - 20:00"
   },
@@ -166,7 +166,7 @@
     "nombre": "Hospital Alemán",
     "tipo": "Hospital Privado",
     "especialidades": ["Clínica Médica", "Cirugía General", "Cardiología", "Neurología"],
-    "ubicacion": { "ciudad": "Buenos Aires", "localidad": "Recoleta", "direccion": "Av. Pueyrredón 1640" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Libertad", "direccion": "Av. Pueyrredón 1640" },
     "telefonos": ["(011) 4827-7000"],
     "dias_y_horarios": "Todos los días, 24 horas"
   },
@@ -175,7 +175,7 @@
     "nombre": "Hospital Británico",
     "tipo": "Hospital Privado",
     "especialidades": ["Medicina General", "Oftalmología", "Oncología", "Cardiología"],
-    "ubicacion": { "ciudad": "Buenos Aires", "localidad": "Constitución", "direccion": "Perdriel 74" },
+    "ubicacion": { "ciudad": "Merlo", "localidad": "Pontevedra", "direccion": "Perdriel 74" },
     "telefonos": ["(011) 4309-6400"],
     "dias_y_horarios": "Todos los días, 24 horas"
   }

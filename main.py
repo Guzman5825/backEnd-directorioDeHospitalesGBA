@@ -3,7 +3,17 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import json
-from typing import Optional
+from typing import Optional,List, Dict
+from pydantic import BaseModel
+
+# Definimos el modelo de datos para un hospital
+class HospitalBase(BaseModel):
+    nombre: str
+    tipo: str
+    especialidades: List[str]
+    ubicacion: Dict[str, str]
+    telefonos: List[str]
+    dias_y_horarios: str
 
 # Cargamos la "base de datos" JSON
 with open("hospitales.json", "r", encoding="utf-8") as f:
@@ -28,12 +38,12 @@ async def obtener_todos():
 # Ruta para filtrar hospitales con paginación
 @app.get("/hospitales")
 async def filtrar_hospitales(
-    nombre: Optional[str] = Query(None, description="Nombre del hospital para filtrar"),
+    nombre: Optional[str] = Query(None, description="Nombre del hospital para filtrar (substring)"),
     ciudad: Optional[str] = Query(None, description="Ciudad para filtrar"),
     localidad: Optional[str] = Query(None, description="Localidad para filtrar"),
     especialidad: Optional[str] = Query(None, description="Especialidad para filtrar"),
     page: int = Query(1, ge=1, description="Número de página"),
-    page_size: int = Query(10, ge=1, description="Cantidad de hospitales por página")
+    page_size: int = Query(10, ge=1, description="Cantidad de hospitales por página"),
 ):
     resultado = hospitales
 
@@ -49,7 +59,7 @@ async def filtrar_hospitales(
     if especialidad:
         resultado = [
             h for h in resultado
-            if especialidad.lower() in (e.lower() for e in h["especialidades"])
+            if any(especialidad.lower() in e.lower() for e in h["especialidades"])
         ]
 
     total = len(resultado)
@@ -58,25 +68,42 @@ async def filtrar_hospitales(
     end = start + page_size
     resultado_paginado = resultado[start:end]
 
- 
     return JSONResponse(content={
         "page": page,
         "page_size": page_size,
-         "total": total,
-         "total_pages": total_pages,
-         "data": resultado_paginado
+        "total": total,
+        "total_pages": total_pages,
+        "data": resultado_paginado
     })
+
+@app.post("/hospitales")
+async def agregar_hospital(hospital: HospitalBase):
+    # Verificar si ya existe un hospital con el mismo nombre
+    if any(h["nombre"].lower() == hospital.nombre.lower() for h in hospitales):
+        raise HTTPException(status_code=400, detail="Ya existe un hospital con ese nombre")
+
+    # Generar ID automático
+    nuevo_id = max([h["id"] for h in hospitales], default=0) + 1
+    nuevo_hospital = hospital.model_dump()
+    nuevo_hospital["id"] = nuevo_id
+
+    hospitales.append(nuevo_hospital)
+
+    with open("hospitales.json", "w", encoding="utf-8") as f:
+        json.dump(hospitales, f, ensure_ascii=False, indent=4)
+
+    return {"mensaje": "Hospital agregado correctamente", "hospital": nuevo_hospital}
 
 
 # Ruta para obtener un hospital por nombre exacto
 @app.get("/hospitales/{nombre}")
 async def obtener_hospital(nombre: str):
-    hospital = next((h for h in hospitales if h["nombre"].lower() == nombre.lower()), None)
-    if hospital:
-        return JSONResponse(content=hospital)
-    else:
-        raise HTTPException(status_code=404, detail="Hospital no encontrado")
+    nombre = nombre.lower()
+    resultados = [h for h in hospitales if nombre in h["nombre"].lower()]
+    return JSONResponse(content=resultados)
+
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="localhost", port=8000, reload=True)
+
